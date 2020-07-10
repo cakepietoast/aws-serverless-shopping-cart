@@ -2,6 +2,8 @@ version: 1
 env:
   variables:
       ORIGIN: https://${AWS_BRANCH//\//-}.${AWS_APP_ID}.amplifyapp.com
+      _CUSTOM_IMAGE: nikolaik/python-nodejs:python3.8-nodejs12
+      STACKNAME: aws-serverless-shopping-cart-amplify
 backend:
   phases:
     preBuild:

@@ -134,12 +134,8 @@ Resources:
       Description: AWS serverless shopping cart
       OauthToken: !Ref OauthToken
       EnvironmentVariables:
-        - Name: _CUSTOM_IMAGE
-          Value: nikolaik/python-nodejs:python3.8-nodejs12
         - Name: S3_BUCKET
           Value: !Ref SrcS3Bucket
-        - Name: STACKNAME
-          Value: "aws-serverless-shopping-cart-amplify"
       Tags:
         - Key: Name
           Value: ShoppingCart
